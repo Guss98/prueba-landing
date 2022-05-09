@@ -18,6 +18,7 @@
   top: 0;
   right: 0;
   width: 50%;
+  height: auto;
 }
 
 .contenedor-texto{
@@ -78,7 +79,8 @@
     flex-direction: column-reverse;
   }
   .wave {
-    width: 75%;
+    height: 48%;
+    width: auto;
   }
   .contenedor-texto {
     display: flex;
@@ -108,5 +110,22 @@
   .ilustracion1 {
     height: 60%;
   }
+}
 
+@media screen and (max-width:600px) {
+  .wave {
+    width: auto;
+    height: 40%;
+  }
+  .contenedor-texto{
+    flex-basis: 60%;
+    justify-content: flex-start; 
+  }
+
+  .titulo {
+    font-size: 35px;
+  }
+  .subtitulo{
+    font-size: 25px;
+  }
 }
