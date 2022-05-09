@@ -124,6 +124,7 @@
 
   .titulo {
     font-size: 35px;
+    letter-spacing: -1;
   }
   .subtitulo{
     font-size: 25px;
