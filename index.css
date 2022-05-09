@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  height: 100%;
+  position: relative;
+  background: linear-gradient(90deg, #83A4D4 0%, #B6FBFF 100%);
+  display: flex;
+  align-items: center;
+
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+.contenedor-texto{
+  flex-basis: 50%;
+  padding-left: 40px;
+  overflow: hidden;
+  color: #274472;
+}
+
+.titulo {
+  font-size: 50px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 1;
+}
+
+.subtitulo {
+  font-size: 30px;
+  font-family: 'Libre Franklin';
+  margin: 20px 0;
+}
+
+.cta {
+  display: inline-block;
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  background: #274472;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #A3DBEF;
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+}
+
+.contenedorImagen {
+  flex-basis: 50%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ilustracion1 {
+  width: 95%;
+  animation: animateIlus ease-in 1s infinite alternate;
+}
+
+@keyframes animateIlus {
+  0%{
+    transform: scale(1);
+  }100% {
+    transform: scale(1.04);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contenedor {
+    flex-direction: column-reverse;
+  }
+  .wave {
+    width: 75%;
+  }
+  .contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+    flex-basis: 50%;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+  .subtitulo{
+    font-size: 30px;
+  }
+
+  .contenedorImagen {
+    flex-basis: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ilustracion1 {
+    height: 60%;
+  }
+
+}
