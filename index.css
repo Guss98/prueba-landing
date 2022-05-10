@@ -283,7 +283,7 @@ z-index: 1;
 @media screen and (max-width: 950px) {
   .contenedor {
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 100%;
   }
   .wave {
     height: 48%;
@@ -319,7 +319,7 @@ z-index: 1;
   }
 
   .contenedor2 {
-    height: 100vh;
+    height: 100%;
     flex-direction: column-reverse;
   }
   .onda {
